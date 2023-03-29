@@ -1,0 +1,86 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="me.carda.awesome_notifications" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="21"
+6-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="21" />
+7-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
+9-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:4:5-89
+9-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:4:22-86
+10    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+10-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:5:5-80
+10-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:5:22-78
+11    <uses-permission android:name="android.permission.VIBRATE" />
+11-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:6:5-65
+11-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:6:22-63
+12
+13    <application>
+13-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:8:5-36:19
+14        <receiver
+14-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:10:9-11:39
+15            android:name="me.carda.awesome_notifications.awesome_notifications_core.broadcasters.receivers.DismissedNotificationReceiver"
+15-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:10:19-114
+16            android:exported="false" />
+16-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:11:13-37
+17        <receiver
+17-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:12:9-13:38
+18            android:name="me.carda.awesome_notifications.awesome_notifications_core.broadcasters.receivers.ScheduledNotificationReceiver"
+18-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:12:19-114
+19            android:exported="true" />
+19-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:13:13-36
+20        <receiver
+20-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:14:9-15:39
+21            android:name="me.carda.awesome_notifications.awesome_notifications_core.broadcasters.receivers.NotificationActionReceiver"
+21-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:14:19-111
+22            android:exported="false" />
+22-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:15:13-37
+23        <receiver
+23-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:17:9-30:20
+24            android:name="me.carda.awesome_notifications.awesome_notifications_core.broadcasters.receivers.RefreshSchedulesReceiver"
+24-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:18:13-103
+25            android:enabled="true"
+25-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:19:13-35
+26            android:exported="true" >
+26-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:20:13-36
+27            <intent-filter>
+27-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:21:13-29:29
+28                <category android:name="android.intent.category.DEFAULT" />
+28-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:22:17-75
+28-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:22:27-73
+29
+30                <action android:name="android.intent.action.BOOT_COMPLETED" />
+30-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:23:17-78
+30-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:23:25-76
+31                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+31-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:24:17-85
+31-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:24:25-83
+32                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+32-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:25:17-83
+32-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:25:25-81
+33                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+33-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:26:17-81
+33-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:26:25-79
+34                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+34-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:27:17-81
+34-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:27:25-79
+35                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+35-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:28:17-106
+35-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:28:25-104
+36            </intent-filter>
+37        </receiver>
+38
+39        <service
+39-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:32:9-34:39
+40            android:name="me.carda.awesome_notifications.awesome_notifications_core.services.BackgroundService"
+40-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:32:18-87
+41            android:exported="false"
+41-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:34:13-37
+42            android:permission="android.permission.BIND_JOB_SERVICE" />
+42-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\awesome_notifications-0.7.0-beta.2\android\src\main\AndroidManifest.xml:33:13-69
+43    </application>
+44
+45</manifest>

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "P:\\university\\FYP\\StudyVerse\\Student\\Flutter code -v.1.0.3\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Usman\\.gradle\\caches\\transforms-3\\52be0bdc9d6a22b2fcacd549a1c1f619\\transformed\\appcompat-1.4.1\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
+                    }
+                }
+            ]
+        }
+    ]
+}
